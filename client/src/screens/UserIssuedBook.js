@@ -38,7 +38,7 @@ const UserIssuedBook = () => {
   if(date){
     //dateFrom = moment(date + 7 * 24 * 3600 * 1000).format('YYYY-MM-DD');
     var result = new Date(date) ;
-    result.setDate(result.getDate() + 7);
+    result.setDate(result.getDate() + 14);
     dateFrom= result ;
 
     var today = moment(new Date());

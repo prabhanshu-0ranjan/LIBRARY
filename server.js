@@ -4,6 +4,14 @@ let cors = require('cors')
 let dotenv = require('dotenv')
 let path = require('path')
 const { MONGO_URI } = require("./keys");
+const CustomCron = require("./cron");
+
+
+// this part initialises the mail sneding to users based on creation date
+
+CustomCron.sendmailAllusers();
+
+//ends here
 
 
 // const api = require('./backend/routes')

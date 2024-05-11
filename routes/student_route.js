@@ -117,5 +117,4 @@ router.post("/removeStudent" , async(req,res)=>{
 })
    
 
-
 module.exports = router;
