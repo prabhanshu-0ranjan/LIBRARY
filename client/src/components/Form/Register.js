@@ -13,7 +13,10 @@ const signInSchema = Yup.object().shape({
     .required("Name is required")
     .min(3, "Name too short- should be 3 chars minimum")
     .max(200, "at max 200"),
-  email: Yup.string().email().required("Email is required"),
+  email: Yup.string()
+  .email('Invalid email address')
+  .matches(/^.*@.*nits\.ac\.in$/, 'Email must end with nits.ac.in')
+  .required('Email is required'),
   password: Yup.string()
     .required("Password is required")
     .min(4, "Password is too short - should be 4 chars min"),

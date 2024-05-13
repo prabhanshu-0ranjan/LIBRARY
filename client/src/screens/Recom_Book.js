@@ -29,9 +29,9 @@ const Recom_Book = () => {
         <div style={{marginTop:"4%"}}>
              <div className=" card col-md-7 m-auto p-5" >
              <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide>
-                 <Toast.Body style={{backgroundColor:"green",color:"white",fontSize:"18px"}}>You successfully Recommadation a Book</Toast.Body>
+                 <Toast.Body style={{backgroundColor:"green",color:"white",fontSize:"18px"}}>You successfully Recommended a Book</Toast.Body>
               </Toast>
-                 <h3 style={{textAlign:"center",fontFamily:"Oswald",fontSize:"40px"}}>Recommadation a Book</h3>
+                 <h3 style={{textAlign:"center",fontFamily:"Oswald",fontSize:"40px"}}>Book Recommendation</h3>
              <div className="mb-4 mt-2">
                         <input type="text" placeholder="title"
                          onChange={(e) => setTitle(e.target.value)} value={title} className="form-control" style={{height:"60px"}} />
